@@ -834,6 +834,22 @@ textarea:focus {
 /*---------------------------------------------------------
             Start-prgress skill-section
 ---------------------------------------------------------*/
+.js-video-button::after {
+  position: absolute;
+  content: '';
+  width: 60px;
+  height: 60px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  z-index: -99;
+  -webkit-animation: pusle-border 1.5s ease-out infinite;
+          animation: pusle-border 1.5s ease-out infinite;
+}
+
 .skill-single h2.title {
   font-size: 24px;
   font-weight: 800;
