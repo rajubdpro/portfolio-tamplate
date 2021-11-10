@@ -18,7 +18,7 @@ h1,
 h2,
 h3,
 h4,
-h4,
+h5,
 h6,
 p {
   text-align: center;
@@ -43,13 +43,18 @@ textarea:focus {
   outline: none;
 }
 
+.main-heading h3,
+.main-heading h5 {
+  color: red !important;
+}
+
 /*-----------------------------------------
       Start Header Section.
 -----------------------------------------*/
 @media (min-width: 991px) {
   .header-section {
     padding: 8px 0px;
-    background: #999;
+    background: #dbd0d0;
   }
   .header-section .logo {
     padding-top: 5px;
@@ -79,7 +84,7 @@ textarea:focus {
   .header-section .nav-link:hover, .header-section .nav-link:active, .header-section .nav-link:focus {
     color: red;
   }
-  .header-section .nav-link:hover .arrow {
+  .header-section li:hover .arrow {
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg);
     color: red;
@@ -507,7 +512,6 @@ textarea:focus {
 
 .about-content h3 {
   text-align: left;
-  color: red;
   padding-bottom: 5px;
 }
 
@@ -535,38 +539,12 @@ textarea:focus {
 /*---------------------------------------------------------
             Start- services section
 ---------------------------------------------------------*/
-#services-section {
-  padding-top: 50px;
-}
-
-#services-section .services-heading {
-  padding-top: 30px;
-}
-
-#services-section .services-heading h3 {
-  color: red;
-}
-
-#services-section .services-heading p {
-  color: white;
-  font-weight: bold;
-  font-size: 17px;
-}
-
-#services-section .services-item {
-  position: relative;
-  font-family: poppins, sens-serif;
-  margin-top: 40px;
-  height: 380px;
-  background-color: white;
-}
-
-#services-section .services-item .services-icon {
+.main-icon {
   padding-top: 25px;
   text-align: center;
 }
 
-#services-section .services-item .services-icon i {
+.main-icon i {
   width: 70px;
   height: 70px;
   border-radius: 50%;
@@ -580,12 +558,35 @@ textarea:focus {
   transition: 0.5s;
 }
 
-#services-section .services-item h2 {
+#services-section {
+  padding-top: 50px;
+}
+
+#services-section .services-heading {
+  padding-top: 30px;
+}
+
+#services-section .services-heading p {
+  color: white;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.main-style {
+  position: relative;
+  font-family: poppins, sens-serif;
+  margin-top: 40px;
+  height: 380px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.main-style h2 {
   padding-top: 10px;
   color: #333;
 }
 
-#services-section .services-item p {
+.main-style p {
   line-height: 28px;
   letter-spacing: 0.5px;
   padding: 10px 20px;
@@ -593,7 +594,7 @@ textarea:focus {
   color: #333;
 }
 
-#services-section .services-item a {
+.main-style .services-btn {
   position: relative;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -606,7 +607,7 @@ textarea:focus {
   overflow: hidden;
 }
 
-#services-section .services-item a:after {
+.main-style .services-btn:after {
   content: "";
   position: absolute;
   width: 100%;
@@ -618,12 +619,12 @@ textarea:focus {
   z-index: -1;
 }
 
-#services-section .services-item a:hover:after {
+.main-style .services-btn:hover:after {
   left: 0;
   color: white !important;
 }
 
-#services-section .services-item::after {
+.main-style::after {
   content: "";
   position: absolute;
   top: 0;
@@ -635,12 +636,12 @@ textarea:focus {
   transition: 0.5s;
 }
 
-#services-section .services-item:hover i {
+.main-style:hover i {
   color: #00e7ff;
   border: 2px solid #00e7ff;
 }
 
-#services-section .services-item:hover:after {
+.main-style:hover:after {
   -webkit-transform: rotate(8deg) !important;
           transform: rotate(8deg) !important;
   background-color: #00e7ff;
@@ -673,14 +674,6 @@ textarea:focus {
   overflow: hidden;
 }
 
-#portfolio-section body {
-  font-family: "poppins", sens-serif;
-}
-
-#portfolio-section .container {
-  margin-top: 50px;
-}
-
 #portfolio-section .portfolio-menu {
   list-style: none;
   display: -webkit-box;
@@ -689,7 +682,8 @@ textarea:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+  margin-top: 20px;
 }
 
 #portfolio-section .portfolio-menu li {
@@ -697,17 +691,12 @@ textarea:focus {
   border: 1px solid #eaeaea;
   cursor: pointer;
   color: #fff;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 #portfolio-section .portfolio-menu li:hover {
   background-color: tomato;
-  color: #fff;
-}
-
-#portfolio-section li.active {
-  background-color: red;
   color: #fff;
 }
 
@@ -742,8 +731,8 @@ textarea:focus {
   height: 100% !important;
   padding-top: 100px;
   z-index: 2;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 #portfolio-section .single-portfolio .portfolio-overlay h4 {
@@ -772,6 +761,364 @@ textarea:focus {
 }
 
 /*---------------------------------------------------------
-            End- portfolio section
+            End- portfolio-section
 ---------------------------------------------------------*/
+/*---------------------------------------------------------
+            Start-skilld-section
+---------------------------------------------------------*/
+#Skilld-section .skilld-item .skilld-content {
+  padding-top: 25px;
+  text-align: center;
+}
+
+#Skilld-section .skilld-item .skilld-content h2 {
+  padding: 0px 8px;
+}
+
+#Skilld-section .skilld-item .skilld-content h3 {
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #333 !important;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 50px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#Skilld-section .skilld-item:hover h3 {
+  background-color: #00e7ff !important;
+  color: #333;
+}
+
+/*---------------------------------------------------------
+            End-skilld-section
+---------------------------------------------------------*/
+/*---------------------------------------------------------
+            start-team-section
+---------------------------------------------------------*/
+#team-section {
+  margin-top: 50px;
+  padding-bottom: 20px;
+}
+
+#team-section .team-item {
+  cursor: pointer;
+  overflow: hidden;
+  margin-top: 30px;
+  padding-bottom: 15px;
+  background-color: #333;
+}
+
+#team-section .team-item:hover .team-img img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+#team-section .team-item .main-team {
+  height: 350px;
+  overflow: hidden;
+}
+
+#team-section .team-item .main-team .team-img img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+/*---------------------------------------------------------
+            End-team-section
+---------------------------------------------------------*/
+/*---------------------------------------------------------
+            Start-prgress skill-section
+---------------------------------------------------------*/
+.skill-single h2.title {
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.skill-single h2.title:after {
+  content: "";
+  clear: both;
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 70px;
+  height: 3px;
+  background: #444;
+}
+
+.resume-item {
+  padding: 10px;
+  border: 2px solid #c6c3c3;
+  margin-bottom: 20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.resume-item:hover {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+
+.resume-item-top {
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 2px solid #c6c3c3;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.resume-item-top .resume-date {
+  width: auto;
+  float: left;
+  overflow: hidden;
+  font-weight: 600;
+  color: #333;
+}
+
+.resume-item-top .resume-icon {
+  overflow: hidden;
+  float: right;
+}
+
+.resume-item-top .resume-icon i {
+  color: #333;
+}
+
+.resume-item-bottom h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ec4a71;
+  text-transform: uppercase;
+}
+
+.resume-item-bottom h5 {
+  font-weight: 600;
+  font-size: 18px;
+  margin: 10px 0px;
+}
+
+.resume-item-bottom p {
+  line-height: 1.7;
+}
+
+.resume-skill-single {
+  margin-bottom: 35px;
+}
+
+.resume-skill-single:last-child {
+  margin: 0px;
+}
+
+.resume-skill-single span {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  display: block;
+  color: white;
+}
+
+.resume-skill-single .progress {
+  background-color: #0e7aa4;
+  border-radius: 0px;
+  height: 20px;
+}
+
+.resume-skill-single .progress .progress-bar {
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #ffb400;
+}
+
+/*---------------------------------------------------------
+            End-progress-skill-section
+---------------------------------------------------------*/
+/*---------------------------------------------------------
+            Start-planing-section
+---------------------------------------------------------*/
+#planing {
+  cursor: pointer;
+  padding-top: 30px;
+}
+
+#planing .plan-item {
+  background-color: #333;
+  margin-top: 40px;
+  -webkit-transition: 0.35s;
+  transition: 0.35s;
+}
+
+#planing .plan-item:hover i {
+  color: red;
+  border: 2px solid red;
+}
+
+#planing .plan-item .plan-content {
+  padding: 30px 10px;
+}
+
+#planing .plan-item .plan-content h2 {
+  height: 50px;
+  border: 5px dotted white;
+  margin-top: 15px;
+}
+
+#planing .plan-item .plan-content .plan-name {
+  width: 175px;
+  height: 40px;
+  background-color: #486674;
+  margin: 0 auto;
+  line-height: 40px;
+  border-radius: 10px;
+}
+
+#planing .bast {
+  position: relative;
+  overflow: hidden !important;
+}
+
+#planing .bast-plan {
+  position: absolute;
+  right: -60px;
+  top: 18px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+#planing .bast-plan h4 {
+  color: #fff;
+  background-color: red;
+  width: 200px;
+  height: 45px;
+  line-height: 45px;
+  letter-spacing: 3px;
+}
+
+/*---------------------------------------------------------
+            End-planing-section
+---------------------------------------------------------*/
+/*---------------------------------------------------------
+            Start-blog-section
+---------------------------------------------------------*/
+#blog-section {
+  margin-top: 40px;
+}
+
+#blog-section .blog-item {
+  cursor: pointer;
+  background-color: #333;
+  margin-top: 40px;
+  -webkit-transition: 0.35s;
+  transition: 0.35s;
+}
+
+#blog-section .blog-item .blog-img img {
+  width: 100%;
+  height: 280px;
+}
+
+#blog-section .blog-item .blog-content {
+  padding: 20px 10px;
+  text-align: center;
+}
+
+#blog-section .blog-item .blog-content p {
+  padding: 15px 10px;
+}
+
+#blog-section .blog-item:hover {
+  -webkit-box-shadow: 0px 0px 20px 0px #eee;
+          box-shadow: 0px 0px 20px 0px #eee;
+  margin-top: 30px;
+}
+
+/*---------------------------------------------------------
+            End-blog-section
+---------------------------------------------------------*/
+/*---------------------------------------------------------
+            start-Contact-section
+---------------------------------------------------------*/
+#contact-section {
+  margin-top: 40px;
+}
+
+#contact-section .contact-left-item {
+  border-radius: 10px;
+  padding: 35px 15px;
+  background-color: #333;
+  margin-top: 30px;
+}
+
+#contact-section .contact-left-item i {
+  color: white !important;
+  font-size: 15px;
+}
+
+#contact-section .contact-left-item h6 {
+  display: inline-block;
+  margin-left: 40px;
+  line-height: 40px;
+}
+
+#contact-section .contact-right-item .form {
+  margin-top: 30px;
+}
+
+#contact-section .contact-right-item .form .form-message {
+  background-color: transparent;
+  border: 2px dotted white;
+  color: red;
+}
+
+#contact-section .contact-right-item .form .form-item {
+  width: 360px;
+  margin-left: 5px;
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 15px 10px;
+  color: white;
+}
+
+/*---------------------------------------------------------
+            End-contact-section
+---------------------------------------------------------*/
+/*---------------------------------------------------------
+            start-back-to-top-btn-section
+---------------------------------------------------------*/
+#topBtn {
+  bottom: 20px;
+  right: 3px;
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+  background-color: red;
+  position: fixed;
+  cursor: pointer;
+  border: none;
+  color: white;
+  display: none;
+  -webkit-transition: 0.35s;
+  transition: 0.35s;
+}
+
+#topBtn:hover {
+  background-color: #333;
+}
+
+/*---------------------------------------------------------
+            End-back-to-top-btn-section
+---------------------------------------------------------*/
+.spase {
+  height: 100vh;
+}
 /*# sourceMappingURL=style.css.map */
