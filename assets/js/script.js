@@ -86,22 +86,7 @@ var $grid = $('.portfolio-items').isotope({
 	$grid.isotope({ filter: filterValue });
   });
 
-    //back to top btn
-  $(window).scroll(function(){
-    if($(this).scrollTop() > 40){
-    $('#topBtn').fadeIn();
-    } else{
-        $('#topBtn').fadeOut();
-    }
-      
-    });
-    
-        $("#topBtn").click(function(){
-            $('html ,body').animate({scrollTop: 0 }, 800);
-    
-        });
-
-
+  //  modalvideo-----
 
         $(".js-video-button").modalVideo({
             youtube:{
@@ -110,6 +95,26 @@ var $grid = $('.portfolio-items').isotope({
                    autoplay:true,
             }
           });
+          
+   //   Back btn-----//Get the button
+
+   var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+
+
+
 })(jQuery);
 
 
