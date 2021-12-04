@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="370.318" height="370.838" viewBox="0 0 370.318 370.838">
+  <g id="Group_4" data-name="Group 4" transform="translate(-341.951 -315.162)">
+    <g id="Objects">
+      <g id="Group_3" data-name="Group 3" transform="translate(124 74)">
+        <g id="email">
+          <path id="Path_1" data-name="Path 1" d="M548.327,337.546l39.942,15.526V587.908A24.078,24.078,0,0,1,564.192,612H242.028a24.079,24.079,0,0,1-24.077-24.092V353.072l39.942-12.2" fill="#3346d2"/>
+          <rect id="Rectangle_1" data-name="Rectangle 1" width="285.995" height="258.975" rx="24.205" transform="translate(260.115 241.662)" fill="#fff" stroke="#ddd" stroke-miterlimit="10" stroke-width="1"/>
+          <g id="Group_1" data-name="Group 1">
+            <rect id="Rectangle_2" data-name="Rectangle 2" width="95.877" height="9.272" transform="translate(358.426 297.658)" fill="#ecf2fe"/>
+            <rect id="Rectangle_3" data-name="Rectangle 3" width="148.486" height="9.272" transform="translate(358.426 332.874)" fill="#ecf2fe"/>
+            <rect id="Rectangle_4" data-name="Rectangle 4" width="219.757" height="9.264" transform="translate(287.155 368.096)" fill="#ecf2fe"/>
+            <rect id="Rectangle_5" data-name="Rectangle 5" width="219.757" height="9.272" transform="translate(287.155 403.307)" fill="#ecf2fe"/>
+            <rect id="Rectangle_6" data-name="Rectangle 6" width="219.757" height="9.269" transform="translate(287.155 438.523)" fill="#ecf2fe"/>
+          </g>
+          <path id="Path_2" data-name="Path 2" d="M368.9,471.888,219.586,596.425A24,24,0,0,0,242.028,612H564.192a24.017,24.017,0,0,0,22.447-15.575L440.024,471.888Z" fill="#3346d2"/>
+          <g id="Group_2" data-name="Group 2">
+            <path id="Path_3" data-name="Path 3" d="M439.233,472.523l147.406,123.9a24.33,24.33,0,0,1-1.644,3.462l.038.047a23.922,23.922,0,0,0,3.236-12.026V353.1Z" fill="#ff4a36"/>
+            <path id="Path_4" data-name="Path 4" d="M219.586,596.425,368.2,472.523,217.951,353.1V587.908a24.061,24.061,0,0,0,3.231,12.026l.053-.047A23.83,23.83,0,0,1,219.586,596.425Z" fill="#ff4a36"/>
+          </g>
+          <rect id="Rectangle_7" data-name="Rectangle 7" width="44.287" height="44.287" transform="translate(287.155 296.827)" fill="#ecf2fe"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
